@@ -9,7 +9,9 @@ public class Main {
             System.out.println("\nМеню:");
             System.out.println("1. Додати інструмент до музиканта");
             System.out.println("2. Відтворити всі інструменти на яких грає музикант");
-            System.out.println("3. Вихід з програми");
+            System.out.println("3. Створити нового музиканта");
+            System.out.println("4. Вихід з програми");
+
             System.out.print("Виберіть опцію: ");
 
             int choice = scanner.nextInt();
@@ -41,6 +43,11 @@ public class Main {
                     musician.playInstrument();
                     break;
                 case 3:
+                    musician = new MusicianImpl();
+                    System.out.println("\nСтарого музиканта видалено");
+                    System.out.println("\nСтворено нового музиканта");
+                    break;
+                case 4:
                     System.out.println("\nПрограма завершує роботу.");
                     System.exit(0);
                     break;

@@ -7,6 +7,7 @@ class MusicianImpl implements Musician {
         this.instruments = new ArrayList<>();
     }
 
+
     public void playInstrument() {
         if (instruments.isEmpty()) {
             System.out.println("Музикант не грає на жодному інструменті.");
@@ -28,4 +29,5 @@ class MusicianImpl implements Musician {
         instruments.add(instrument);
         System.out.println("Інструмент додано.");
     }
+
 }
